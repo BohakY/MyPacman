@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacmanG", "PacmanG\PacmanG.csproj", "{B6E95F28-1DE6-4F68-A777-A8D99426A517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPacman", "PacmanG\MyPacman.csproj", "{B6E95F28-1DE6-4F68-A777-A8D99426A517}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

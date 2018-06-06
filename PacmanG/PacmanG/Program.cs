@@ -33,7 +33,74 @@ namespace PacmanG
             return coordinates;
         }
 
+        public static bool IsCorrectCpprdinates(Point coordinates)
+        {
+
+            if ((MIN_X < coordinates.X) && (coordinates.X < MAX_X) && (MIN_Y < coordinates.Y) && (coordinates.Y < MAX_Y))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
+
+    }
+
+    public struct Point
+    {
+        public int X;
+        public int Y;
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+
+    public class Player
+    {
+        private static Directions DEFAULT_DIRECTION = Directions.Right;
+        private static Point DEFAULT_COORDINATES = new Point(0, 0);
+
+        public static int ObjectCount = 0;
+
+        //public static int Coef = 100;
+
+        public int Speed;
+        public string Name;
+        public Directions direction;
+        public Point Coordinates;
+
+        public Player()
+        {
+            Name = "Pacman";
+            direction = DEFAULT_DIRECTION;
+            Coordinates = DEFAULT_COORDINATES;
+
+            ObjectCount++;
+        }
+
+        public Player(int Speed, Directions direction, Point Coordinates, string Name = "NEW Player")
+        {
+            this.Speed = Speed;
+            this.Name = Name;
+            this.direction = direction;
+            this.Coordinates = Coordinates;
+
+            ObjectCount++;
+        }
+
+        //public void ChangeSpeed()
+        //{
+        //    this.Speed *= Coef;
+        //}
+
+
         
+
     class Program
     {
         static void Main(string[] args)
